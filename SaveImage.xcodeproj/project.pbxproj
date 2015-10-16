@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F9BA7E01BC8D9D000B43527 /* GetVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA7DF1BC8D9D000B43527 /* GetVc.swift */; };
+		1F9BA7E21BC8DB6900B43527 /* GetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA7E11BC8DB6900B43527 /* GetTableViewCell.swift */; };
 		1FE863231BC5231900B23C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE863221BC5231900B23C4C /* AppDelegate.swift */; };
 		1FE863261BC5231A00B23C4C /* SaveImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FE863241BC5231A00B23C4C /* SaveImage.xcdatamodeld */; };
 		1FE863281BC5231A00B23C4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE863271BC5231A00B23C4C /* ViewController.swift */; };
@@ -14,6 +16,7 @@
 		1FE8632D1BC5231B00B23C4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8632C1BC5231B00B23C4C /* Images.xcassets */; };
 		1FE863301BC5231B00B23C4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8632E1BC5231B00B23C4C /* LaunchScreen.xib */; };
 		1FE8633C1BC5231C00B23C4C /* SaveImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8633B1BC5231C00B23C4C /* SaveImageTests.swift */; };
+		1FE863461BC533EC00B23C4C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE863451BC533EB00B23C4C /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +30,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F9BA7DF1BC8D9D000B43527 /* GetVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetVc.swift; path = SaveImage/GetVc.swift; sourceTree = "<group>"; };
+		1F9BA7E11BC8DB6900B43527 /* GetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetTableViewCell.swift; path = SaveImage/GetTableViewCell.swift; sourceTree = "<group>"; };
 		1FE8631D1BC5231900B23C4C /* SaveImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE863211BC5231900B23C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE863221BC5231900B23C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FE863251BC5231A00B23C4C /* SaveImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaveImage.xcdatamodel; sourceTree = "<group>"; };
-		1FE863271BC5231A00B23C4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FE863271BC5231A00B23C4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SaveImage/ViewController.swift; sourceTree = "<group>"; };
 		1FE8632A1BC5231B00B23C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1FE8632C1BC5231B00B23C4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1FE8632C1BC5231B00B23C4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SaveImage/Images.xcassets; sourceTree = "<group>"; };
 		1FE8632F1BC5231B00B23C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1FE863351BC5231C00B23C4C /* SaveImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE8633A1BC5231C00B23C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE8633B1BC5231C00B23C4C /* SaveImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveImageTests.swift; sourceTree = "<group>"; };
+		1FE863451BC533EB00B23C4C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE863461BC533EC00B23C4C /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +65,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F9BA7E71BC9394C00B43527 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FE863271BC5231A00B23C4C /* ViewController.swift */,
+				1F9BA7E11BC8DB6900B43527 /* GetTableViewCell.swift */,
+				1F9BA7DF1BC8D9D000B43527 /* GetVc.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1F9BA7E81BC9395700B43527 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FE8632C1BC5231B00B23C4C /* Images.xcassets */,
+				1FE863291BC5231B00B23C4C /* Main.storyboard */,
+				1FE8632E1BC5231B00B23C4C /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1F9BA7E91BC9395F00B43527 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FE863241BC5231A00B23C4C /* SaveImage.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1F9BA7EA1BC93F6900B43527 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				1FE863451BC533EB00B23C4C /* CoreData.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
 		1FE863141BC5231700B23C4C = {
 			isa = PBXGroup;
 			children = (
+				1F9BA7EA1BC93F6900B43527 /* FrameWorks */,
+				1F9BA7E91BC9395F00B43527 /* Model */,
+				1F9BA7E81BC9395700B43527 /* View */,
+				1F9BA7E71BC9394C00B43527 /* Controller */,
 				1FE8631F1BC5231900B23C4C /* SaveImage */,
 				1FE863381BC5231C00B23C4C /* SaveImageTests */,
 				1FE8631E1BC5231900B23C4C /* Products */,
@@ -80,11 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				1FE863221BC5231900B23C4C /* AppDelegate.swift */,
-				1FE863271BC5231A00B23C4C /* ViewController.swift */,
-				1FE863291BC5231B00B23C4C /* Main.storyboard */,
-				1FE8632C1BC5231B00B23C4C /* Images.xcassets */,
-				1FE8632E1BC5231B00B23C4C /* LaunchScreen.xib */,
-				1FE863241BC5231A00B23C4C /* SaveImage.xcdatamodeld */,
 				1FE863201BC5231900B23C4C /* Supporting Files */,
 			);
 			path = SaveImage;
@@ -218,6 +260,8 @@
 				1FE863281BC5231A00B23C4C /* ViewController.swift in Sources */,
 				1FE863261BC5231A00B23C4C /* SaveImage.xcdatamodeld in Sources */,
 				1FE863231BC5231900B23C4C /* AppDelegate.swift in Sources */,
+				1F9BA7E21BC8DB6900B43527 /* GetTableViewCell.swift in Sources */,
+				1F9BA7E01BC8D9D000B43527 /* GetVc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +290,7 @@
 				1FE8632A1BC5231B00B23C4C /* Base */,
 			);
 			name = Main.storyboard;
+			path = SaveImage;
 			sourceTree = "<group>";
 		};
 		1FE8632E1BC5231B00B23C4C /* LaunchScreen.xib */ = {
@@ -254,6 +299,7 @@
 				1FE8632F1BC5231B00B23C4C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = SaveImage;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -415,6 +461,7 @@
 				1FE863411BC5231D00B23C4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FE863421BC5231D00B23C4C /* Build configuration list for PBXNativeTarget "SaveImageTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +470,7 @@
 				1FE863441BC5231D00B23C4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -433,7 +481,8 @@
 				1FE863251BC5231A00B23C4C /* SaveImage.xcdatamodel */,
 			);
 			currentVersion = 1FE863251BC5231A00B23C4C /* SaveImage.xcdatamodel */;
-			path = SaveImage.xcdatamodeld;
+			name = SaveImage.xcdatamodeld;
+			path = SaveImage/SaveImage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
